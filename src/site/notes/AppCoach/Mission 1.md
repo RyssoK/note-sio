@@ -484,3 +484,76 @@ private void AfficherResultat(int unPoids, int uneTaille, int unAge, int unSexe)
 
 # Test Unitaire
 
+> Un test unitaire sert à vérifier le bon fonctionnement d'un programme en attendant une valeur prédéfini et en vérifiant si la valeur renvoyé par le programme est la même.
+
+#### TestIMG()
+
+````C#
+public void TestIMG()
+    {
+		// Profil : Homme parfait (M.Dubromelle)
+		Profil unProfil1 = new Profil(62, 177, 28, 1);
+		
+		double resultatAttendu1 = 13.96;
+		
+		double resultatTest1 = unProfil1.calculIMG();
+		
+		Assert.AreEqual(resultatAttendu1, resultatTest1, delta: 0.1);
+		
+		
+		//Profil : Femme parfaite (Ma femme)
+		Profil unProfil4 = new Profil(75, 175, 19, 0);
+		
+		double resultatAttendu4 = 28.36;
+		
+		double resultatTest4 = unProfil4.calculIMG();
+		
+		Assert.AreEqual(resultatAttendu4, resultatTest4, delta: 0.1);
+		...
+````
+
+Puis ainsi de suite pour les hommes ou femmes en surpoids ou trop maigre.
+
+- **Assert** : vérifie que l’action réalisée par la méthode est conforme à l’attendu du test unitaire.
+- **Act** : invoque la méthode à tester avec les paramètres.
+- **Arrange** : d’une méthode de test unitaire initialise les objets et définit la valeur des données transmises à la méthode testée.
+- **delta** : Sélectionner une marge d'erreur.
+
+#### TestResultat()
+
+On fait de même avec le message accompagnant le résultat.
+
+````C#
+public void TestResultat()
+    {
+        //Profil : Surpoids
+        Profil unProfil = new Profil(96, 175, 19, 1);
+
+        string resultatAttendu = " Surpoids !";
+
+        string resultatTest = unProfil.resultatIMG();
+
+        Assert.AreEqual(resultatAttendu, resultatTest);
+
+
+        //Profil : Parfait
+        Profil unProfil1 = new Profil(62, 175, 19, 1);
+
+        string resultatAttendu1 = " Parfait !";
+
+        string resultatTest1 = unProfil1.resultatIMG();
+
+        Assert.AreEqual(resultatAttendu1, resultatTest1);
+
+
+        //Profil : Trop maigre
+        Profil unProfil2 = new Profil(40, 175, 19, 0);
+
+        string resultatAttendu2 = " Trop maigre !";
+
+        string resultatTest2 = unProfil2.resultatIMG();
+
+        Assert.AreEqual(resultatAttendu2, resultatTest2);
+    }
+````
+
