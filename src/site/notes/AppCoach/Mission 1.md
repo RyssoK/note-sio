@@ -228,6 +228,8 @@ La création de l'interface se fait via le fichier **activity_main.xml**. Celui-
 
 
 
+
+
 # Structure du projet
 
 
