@@ -373,8 +373,3 @@ public string GetMessage()
 
 > La vue permet d'afficher les données à l'utilisateur au l'occurence son IMG par rapport à son profil.
 
-
-
-
-
-
