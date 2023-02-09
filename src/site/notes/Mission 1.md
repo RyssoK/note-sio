@@ -373,3 +373,35 @@ public string GetMessage()
 
 > La vue permet d'afficher les données à l'utilisateur au l'occurence son IMG par rapport à son profil.
 
+Nous avons commencé à instancer les variables qui va nous permettre de stocker les valeurs saisies par l'utilisateur.
+
+````C#
+private EditText txtAge;
+private EditText txtPoids;
+private EditText txtTaille;
+private RadioButton rdHomme;
+private RadioButton rdFemme;
+private TextView lbIMG;
+private ImageView imgSmiley;
+private Button btCalculer;
+
+private Controle controle;
+
+private void init()
+{
+    this.controle = Controle.GetInstance(this);
+    
+	txtPoids = (EditText)FindViewById(Resource.Id.txtPoids);
+    txtTaille = (EditText)FindViewById(Resource.Id.txtTaille);
+    txtAge = (EditText)FindViewById(Resource.Id.txtAge);
+    rdHomme = (RadioButton)FindViewById(Resource.Id.rdHomme);
+    rdFemme = (RadioButton)FindViewById(Resource.Id.rdFemme);
+    lbIMG = (TextView)FindViewById(Resource.Id.lbIMG);
+    imgSmiley = (ImageView)FindViewById(Resource.Id.imgSmiley);
+
+    btCalculer = (Button)FindViewById(Resource.Id.btCalculer);
+    btCalculer.Click += btCalculer_Click;
+
+    RecupProfil(); // Récupère les données sauvegardées
+}
+````
