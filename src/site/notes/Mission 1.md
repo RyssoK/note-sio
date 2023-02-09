@@ -401,7 +401,5 @@ private void init()
 
     btCalculer = (Button)FindViewById(Resource.Id.btCalculer);
     btCalculer.Click += btCalculer_Click;
-
-    RecupProfil(); // Récupère les données sauvegardées
 }
 ````
