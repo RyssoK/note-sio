@@ -126,7 +126,7 @@ public class Profil
 
 #### calculIMG()
 
-Cette fonction permet de convertir la taille saisie en centimètre en mètre et de calculer IMG.
+Cette méthode permet de convertir la taille saisie en centimètre en mètre et de calculer IMG.
 
 ````C#
 public double calculIMG()
@@ -140,7 +140,7 @@ public double calculIMG()
 
 #### resultatIMG()
 
-Cette fonction permet d'afficher le résultat en fonction du sexe de la personne.
+Cette méthode permet d'afficher le résultat en fonction du sexe de la personne.
 
 ````C#
 public string resultatIMG()
@@ -273,7 +273,7 @@ private void init()
 
 #### btCalculer_Click()
 
-Ensuite, on fera la méthode **btCalculer_Click()** qui va vérifier que les données sont correctes puis les tranmettre à la fonction **AfficherResultat()** et de définir certaines donnée comme le sexe (en vérifiant si la case homme est coché ou non).
+Ensuite, on fera la méthode **btCalculer_Click()** qui va vérifier que les données sont correctes puis les transmettre à la fonction **AfficherResultat()** et de définir certaines donnée comme le sexe (en vérifiant si la case homme est coché ou non).
 
 ````C#
 private void btCalculer_Click(object sender, EventArgs e)
