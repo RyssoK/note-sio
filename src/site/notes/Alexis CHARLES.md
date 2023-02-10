@@ -5,7 +5,4 @@
 
 # TP
 
-#### AppCoach
-
-- [[AppCoach/Mission 1 - Interface\|Mission 1 - Interface]]
-- [[AppCoach/Mission 2 - Sérialisation\|Mission 2 - Sérialisation]]
+- [[AppCoach/Présentation AppCoach\|Présentation AppCoach]]
