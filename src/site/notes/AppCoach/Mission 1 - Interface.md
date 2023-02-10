@@ -376,13 +376,16 @@ public void TestIMG()
 
 Puis ainsi de suite pour les hommes ou femmes en surpoids ou trop maigre.
 
-- **Assert** : vérifie que l’action réalisée par la méthode est conforme à l’attendu du test unitaire.
+- _**Assert**_ : vérifie que l’action réalisée par la méthode est conforme à l’attendu du test unitaire.
 
 - **Act** : invoque la méthode à tester avec les paramètres.
 
 - **Arrange** : d’une méthode de test unitaire initialise les objets et définit la valeur des données transmises à la méthode testée.
 
-- **delta** : Sélectionner une marge d'erreur.
+- _**delta**_ : Sélectionner une marge d'erreur.
+
+- _**AreEqual()**_ : Permet de vérifier l'égalité.
+
 
 #### TestResultat()
 
