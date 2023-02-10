@@ -102,10 +102,6 @@ Le premier **LinearLayout** avec un **RadioGroup** contenant deux **RadioButton*
 ```
 
 
-
-
-
-
 # Structure du projet
 
 
@@ -113,11 +109,11 @@ Nous avons utilisé l'architecture **MVC** (Modèle Vue Contrôleur) pour struct
 
 ## Modèle
 
-> Le modèle contient l'accès des données de la Classe Profil qui initialise les variables pour créer le profil de l'utilisateur (sexe, poids, taille et âge).
+>Le modèle contient l'accès des données de la classe Profil qui initialise les variables pour créer le profil de l'utilisateur (sexe, poids, taille et âge).
 
 #### Class Profil
 
-On a créé la Classe Profil contenant son constructeur et ses getters dans le dossier Modèle qui instancie le données définissant un profil.
+On a créé la classe Profil contenant son constructeur et ses getters dans le dossier Modèle qui instancie les données définissant un profil.
 
 ````C#
 public class Profil
@@ -201,7 +197,7 @@ public string resultatIMG()
 
 ## Contrôleur
 
-> Le contrôleur permet de récupérer les données saisies par l'utilisateur, traiter les données, appeler des fonctions du modèle et appeler les vues pour l'affichage.
+>Le contrôleur permet de récupérer les données saisies par l'utilisateur, traiter les données, appeler des fonctions du modèle et appeler les vues pour l'affichage.
 
 #### Class Controle
 
