@@ -186,3 +186,53 @@ L'étape suivante consiste à permettre à la vue **(MainActivity)** de récupé
 
 ## Class MainActivity
 
+Nous allons créer une méthode privée **RecupProfil()** dont le rôle est de valoriser les éléments affichés grâce aux données récupérées dans le contrôleur.
+
+```C#
+	private void RecupProfil()
+	    {
+            if(controle.GetPoids() != 0)
+            {
+                txtPoids.Text = controle.GetPoids().ToString();
+                txtTaille.Text = controle.GetTaille().ToString();
+                txtAge.Text = controle.GetAge().ToString();
+
+                rdFemme.Checked = true;
+                if(controle.GetSexe() == 1)
+                {
+                    rdHomme.Checked = true;
+                }
+
+                double img = this.controle.GetIMG();
+                string message = this.controle.GetMessage();
+
+                if (message == " Parfait !")
+                {
+                    imgSmiley.SetImageResource(Resource.Drawable.Smiley_Ok);
+                    lbIMG.SetTextColor(Android.Graphics.Color.DarkGreen);
+                }
+                else if (message == " Trop maigre !")
+                {
+                    imgSmiley.SetImageResource(Resource.Drawable.Smiley_PasTop);
+                    lbIMG.SetTextColor(Android.Graphics.Color.DarkRed);
+                }
+                else
+                {
+                    imgSmiley.SetImageResource(Resource.Drawable.Smiley_No);
+                    lbIMG.SetTextColor(Android.Graphics.Color.DarkRed);
+                }
+                lbIMG.Text = String.Format("{0:0.00}", img) + "% " + message;
+            }
+        }
+```
+
+Pour finir, nous devons juste utiliser la fonction précédente à la fin dans la méthode **init()**.
+
+```C#
+private void init()
+    {
+	    ...
+		
+		RecupProfil(); // Récupère les données sauvegardées
+	}
+```
