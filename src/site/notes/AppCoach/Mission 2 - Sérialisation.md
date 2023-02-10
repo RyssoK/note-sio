@@ -103,33 +103,33 @@ Nous pouvons maintenant procéder à la sérialisation dans la méthode **CreerP
 
 ```C#
 public void CreerProfil(int unPoids, int uneTaille, int unAge, int unSexe)
-    {
-        profil = new Profil(unPoids, uneTaille, unAge, unSexe);
-        Serializer.serialize(nomFichier, profil);
-    }
+{
+    profil = new Profil(unPoids, uneTaille, unAge, unSexe);
+    Serializer.serialize(nomFichier, profil);
+}
 ```
 
 Pour récupérer les données, nous allons créer une méthode statique **RecupSerialize()**, toujours dans la classe Controle.
 
 ```C#
 private static void RecupSerialize()
-    {
-        profil = (Profil)Serializer.deserialize(nomFichier);
-    }
+{
+    profil = (Profil)Serializer.deserialize(nomFichier);
+}
 ```
 
 Maintenant, il faut qu'on appelle cette méthode **dès le départ de l'application** c'est-à-dire au moment de la **création d'une instance** de la classe Controle.
 
 ```C#
 public static Controle GetInstance()
+{
+    if(Controle.instance == null)
     {
-        if(Controle.instance == null)
-        {
-            Controle.instance = new Controle();
-            RecupSerialize();
-        }
-        return Controle.instance;
+        Controle.instance = new Controle();
+        RecupSerialize();
     }
+    return Controle.instance;
+}
 ```
 
 L'étape suivante consiste à permettre à la vue **(MainActivity)** de récupérer les données. Donc, nous allons créer des getters dans la classe Controle.
@@ -186,7 +186,7 @@ L'étape suivante consiste à permettre à la vue **(MainActivity)** de récupé
 
 ## Class MainActivity
 
-Nous allons créer une méthode privée **RecupProfil()** dont le rôle est de valoriser les éléments affichés grâce aux données récupérées dans le contrôleur.
+Nous allons créer une méthode privée **RecupProfil()** dont le rôle est de valoriser les éléments affichés grâce aux données récupérées dans le contrôleur depuis la vue.
 
 ```C#
 	private void RecupProfil()
