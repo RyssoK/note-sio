@@ -209,6 +209,8 @@ sealed class Controle
         }
 ````
 
+- **Sealed class Controle** : aucune classe peut hériter de la classe Controle.
+
 #### CreerProfil(), GetIMG() et GetMessage()
 
 Puis on a créer une méthode nous permettant de créer un **nouveau profil** avec les informations qui proviennent de la **vue** (**poids**, **taille**, **âge** et le **sexe**). 
