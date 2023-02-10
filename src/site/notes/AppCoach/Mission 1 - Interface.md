@@ -121,7 +121,7 @@ public class Profil
             p_message = resultatIMG();
         }
         ...
-        Les getters pour chaque variable saisie dans le constructeur
+        /// Les getters pour chaque variable saisie dans le constructeur
 ````
 
 #### calculIMG()
