@@ -7,5 +7,5 @@
 
 #### AppCoach
 
-- [[AppCoach/AppCoach_Mission 1\|AppCoach_Mission 1]]
-- [[AppCoach/AppCoach_Mission 2\|AppCoach_Mission 2]]
+- [[AppCoach/AppCoach Mission 1\|AppCoach Mission 1]]
+- [[AppCoach/AppCoach Mission 2\|AppCoach Mission 2]]
