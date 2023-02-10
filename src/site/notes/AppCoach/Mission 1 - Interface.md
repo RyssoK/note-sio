@@ -2,14 +2,6 @@
 {"dg-home":false,"dg-publish":true,"permalink":"/app-coach/mission-1-interface/","dgPassFrontmatter":true}
 ---
 
-# Présentation du projet
-
-
-Le projet consiste à créer une **Application Android** qui permet de calculer l'**IMG**
-(Indice de Masse Grasse) en fonction du **sexe**, de l'**âge**, du **poids** et de la **taille** de la personne.
-
-Grâce à ce calcul, nous pouvons savoir le niveau de corpulence d'une personne (trop maigre, parfait et surpoids).
-
 
 # Support
 
