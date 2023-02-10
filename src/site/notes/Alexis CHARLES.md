@@ -7,5 +7,5 @@
 
 #### AppCoach
 
-- [[AppCoach/Interface Mission 1\|Interface Mission 1]]
-- [[AppCoach/Sérialisation Mission 2\|Sérialisation Mission 2]]
+- [[AppCoach/Mission 1 - Interface\|Mission 1 - Interface]]
+- [[AppCoach/Mission 2 - Sérialisation\|Mission 2 - Sérialisation]]
