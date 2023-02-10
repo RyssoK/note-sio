@@ -220,9 +220,9 @@ Et aussi deux méthodes publiques qui retourne l'**IMG** et affiche le **résult
 ````C#
 
 public void CreerProfil(int unPoids, int uneTaille, int unAge, int unSexe)
-        {
-            profil = new Profil(unPoids, uneTaille, unAge, unSexe);
-        }
+{
+    profil = new Profil(unPoids, uneTaille, unAge, unSexe);
+}
 
 public double GetIMG()
 {
