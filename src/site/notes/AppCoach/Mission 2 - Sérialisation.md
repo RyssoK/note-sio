@@ -79,7 +79,7 @@ Pour qu'on puisse effectuer la sérialisation, nous devons faire quelques modifi
 
 ## Class Profil
 
-> Tous d'abord, nous allons permettre à l'objet Profil d'être sérialisable.
+Tous d'abord, nous allons permettre à l'objet Profil d'être sérialisable.
 
 ````C#
 	[Serializable]
