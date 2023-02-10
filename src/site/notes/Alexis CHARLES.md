@@ -5,4 +5,4 @@
 
 # TP
 
-- [[AppCoach/Présentation AppCoach\|Présentation AppCoach]]
+- [[AppCoach/AppCoach\|AppCoach]]
