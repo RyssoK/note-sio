@@ -3,12 +3,6 @@
 ---
 
 
-# Support
-
-
-> Le support qu'on a utilisé pour l'application AppCoach c'est **Visual Studio 2019** et on utilisera Xamarin.
-
-
 # Interface
 
 
