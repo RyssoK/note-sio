@@ -38,6 +38,7 @@ La création de l'interface se fait via le fichier **activity_main.xml**. Celui-
 
 ## Code activity_main.xml
 
+Le premier **LinearLayout** avec un **RadioGroup** contenant deux **RadioButton** pour prendre connaissance du sexe de la personne.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -97,133 +98,8 @@ La création de l'interface se fait via le fichier **activity_main.xml**. Celui-
                 </RadioGroup>
             </LinearLayout>
             <LinearLayout
-                android:orientation="vertical"
-                android:minWidth="25px"
-                android:minHeight="25px"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:id="@+id/linearLayout8">
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:minWidth="25px"
-                    android:minHeight="25px"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:id="@+id/linearLayout9">
-                    <TextView
-                        android:text="Poids :"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:textSize="20sp"
-                        android:id="@+id/textViewPoids" />
-                    <EditText
-                        android:inputType="number"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:id="@+id/txtPoids" />
-                </LinearLayout>
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:minWidth="25px"
-                    android:minHeight="25px"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:id="@+id/linearLayout10">
-                    <TextView
-                        android:text="Taille :"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:textSize="20sp"
-                        android:id="@+id/textViewTaille" />
-                    <EditText
-                        android:inputType="number"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:id="@+id/txtTaille" />
-                </LinearLayout>
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:minWidth="25px"
-                    android:minHeight="25px"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:id="@+id/linearLayout11">
-                    <TextView
-                        android:text="Age :"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:textSize="20sp"
-                        android:id="@+id/textView3" />
-                    <EditText
-                        android:inputType="number"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:id="@+id/txtAge" />
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:minWidth="10px"
-            android:minHeight="10px"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/linearLayout3">
-            <Button
-                android:text="Calculer"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textSize="22sp"
-                android:id="@+id/btCalculer"
-                android:height="15px" />
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:minWidth="25px"
-            android:minHeight="25px"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:gravity="center|left"
-            android:layout_gravity="center_horizontal"
-            android:id="@+id/linearLayout4">
-            <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
-                android:layout_width="196.5dp"
-                android:layout_height="match_parent"
-                android:layout_margin="25px"
-                android:id="@+id/imgSmiley"
-                android:layout_marginLeft="0.0dp" />
-            <TextView
-                android:text="Votre IMG :"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center|left"
-                android:layout_gravity="center_horizontal"
-                android:id="@+id/lbIMG" />
-        </LinearLayout>
-    </LinearLayout>
-</RelativeLayout>
+            ...
 ```
-
 
 
 
