@@ -32,10 +32,11 @@ public DateTime GetDateMesure()
 Modification de la méthode **CreerProfil()** de la classe contrôle pour rajouter la date au moment où l'utilisateur entre son profil.
 
 ```C#
+
 public void CreerProfil(int unPoids, int uneTaille, int unAge, int unSexe)
-    {
-        profil = new Profil(DateTime.Now, unPoids, uneTaille, unAge, unSexe);
-    }
+{
+    profil = new Profil(DateTime.Now, unPoids, uneTaille, unAge, unSexe);
+}
 ```
 
 # Implémentation de l'accès à la base
