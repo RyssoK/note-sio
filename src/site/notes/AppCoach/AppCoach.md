@@ -16,4 +16,3 @@ Grâce à ce calcul, nous pouvons savoir le niveau de corpulence d'une personne 
 
 - [[AppCoach/Mission 1 - Interface\|Mission 1 - Interface]]
 - [[AppCoach/Mission 2 - Sérialisation\|Mission 2 - Sérialisation]]
-- [[AppCoach/Mission 3 - SQLite\|Mission 3 - SQLite]]
