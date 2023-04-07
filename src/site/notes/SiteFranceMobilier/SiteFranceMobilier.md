@@ -8,5 +8,5 @@
 
 # Mission
 
-- [[SiteFranceMobilier/Mission A\|Mission A]]
-- [[SiteFranceMobilier/Mission B\|Mission B]]
+- [[SiteFranceMobilier/Mission A\|SiteFranceMobilier/Mission A]]
+- [[SiteFranceMobilier/Mission B\|SiteFranceMobilier/Mission B]]
